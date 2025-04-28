@@ -1,0 +1,63 @@
+/* styles.css */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 100%; /* การ์ดไม่เกินขนาดหน้าจอ */
+}
+
+.table-container {
+  overflow-x: auto; /* ให้แถบเลื่อนแนวนอนปรากฏเมื่อเนื้อหาภายในตารางเกินขนาด */
+  margin-top: 10px;
+}
+
+.table {
+  width: 100%; /* กำหนดความกว้าง 100% */
+  margin: 0 auto; /* ทำให้ตารางอยู่กลาง */
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: left;
+}
+
+.table thead tr {
+  background-color: #f3f4f6;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+.table tfoot td {
+  text-align: center;
+  padding: 12px;
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
